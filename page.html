@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE>Course price calculation</TITLE>
+    <script lang="js" src="lab5.js"></script>
+</HEAD>
+<BODY>
+<h3>Choose your courses</h3>
+Choose as many courses as you want:<br>
+<input type="checkbox" name="lan" value=100 id="Java" onchange="showOrHide('Java')">Java<br>
+<div style="display: none; margin-left: 25px;" id="JavaOptions">
+    <form id="JavaForm">
+        Choose the language:<br>
+        <input type="radio" name="language" value="50"> English<br>
+        <input type="radio" name="language" value="20"> Russian<br>
+        <input type="radio" name="language" value="20"> Ukrainian<br>
+        Choose the length:<br>
+        <input type="radio" name="length" value="30"> 3 months<br>
+        <input type="radio" name="length" value="0"> 6 months<br>
+        Choose the reporting form:<br>
+        <input type="radio" name="repForm" value="0"> Online<br>
+        <input type="radio" name="repForm" value="20"> Face-to-face<br>
+    </form>
+</div>
+<input type="checkbox" name="lan" value=100 id="Cpp" onchange="showOrHide('Cpp')">C++<br>
+<div style="display: none; margin-left: 25px;" id="CppOptions">
+    <form id="CppForm">
+        Choose the language:<br>
+        <input type="radio" name="language" value="50"> English<br>
+        <input type="radio" name="language" value="20"> Russian<br>
+        <input type="radio" name="language" value="20"> Ukrainian<br>
+        Choose the length:<br>
+        <input type="radio" name="length" value="30"> 3 months<br>
+        <input type="radio" name="length" value="0"> 6 months<br>
+        Choose the reporting form:<br>
+        <input type="radio" name="repForm" value="0"> Online<br>
+        <input type="radio" name="repForm" value="20"> Face-to-face<br>
+    </form>
+</div>
+<input type="checkbox" name="lan" value=100 id="Cs" onchange="showOrHide('Cs')">C#<br>
+<div style="display: none; margin-left: 25px;" id="CsOptions">
+    <form id="CsForm">
+        Choose the language:<br>
+        <input type="radio" name="language" value="50"> English<br>
+        <input type="radio" name="language" value="20"> Russian<br>
+        <input type="radio" name="language" value="20"> Ukrainian<br>
+        Choose the length:<br>
+        <input type="radio" name="length" value="30"> 3 months<br>
+        <input type="radio" name="length" value="0"> 6 months<br>
+        Choose the reporting form:<br>
+        <input type="radio" name="repForm" value="0"> Online<br>
+        <input type="radio" name="repForm" value="20"> Face-to-face<br>
+    </form>
+</div>
+<input type="checkbox" name="lan" value=150 id="Js" onchange="showOrHide('Js')">JavaScript<br>
+<div style="display: none; margin-left: 25px;" id="JsOptions">
+    <form id="JsForm">
+        Choose the language:<br>
+        <input type="radio" name="language" value="50"> English<br>
+        <input type="radio" name="language" value="20"> Russian<br>
+        <input type="radio" name="language" value="20"> Ukrainian<br>
+        Choose the length:<br>
+        <input type="radio" name="length" value="30"> 3 months<br>
+        <input type="radio" name="length" value="0"> 6 months<br>
+        Choose the reporting form:<br>
+        <input type="radio" name="repForm" value="0"> Online<br>
+        <input type="radio" name="repForm" value="20"> Face-to-face<br>
+    </form>
+</div>
+<input type="checkbox" name="lan" value=75 id="HtmlCss" onchange="showOrHide('HtmlCss')">HTML5 & CSS3<br>
+<div style="display: none; margin-left: 25px;" id="HtmlCssOptions">
+    <form id="HtmlCssForm">
+        Choose the language:<br>
+        <input type="radio" name="language" value="50"> English<br>
+        <input type="radio" name="language" value="20"> Russian<br>
+        <input type="radio" name="language" value="20"> Ukrainian<br>
+        Choose the length:<br>
+        <input type="radio" name="length" value="30"> 3 months<br>
+        <input type="radio" name="length" value="0"> 6 months<br>
+        Choose the reporting form:<br>
+        <input type="radio" name="repForm" value="0"> Online<br>
+        <input type="radio" name="repForm" value="20"> Face-to-face<br>
+    </form>
+</div>
+
+<input type="button" value="Price:" onClick="total()"> <hr>
+<input type="Text" size=50 name="price" value="" id="result"><br>
+<input type="reset" value="Refresh">
+
+</BODY>
+</HTML>
