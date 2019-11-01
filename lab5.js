@@ -1,20 +1,11 @@
-const http = require('http')
-const hostname = '127.0.0.1'
+const express = require("express")
 const port = process.env.PORT || 3000
-const server = http.createServer((req, res) => {
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'text/plain')
-  res.end('Hi there!\n')
+const server = express()
+server.use(express.static(__dirname))
+server.get("/", function(req, res) {
+  res.sendFile(__dirname + "/page.html")
 })
-/*server.get("/", function(req, res) {
-  res.send
-})
-*/
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
-
+server.listen(port)
 function total () {
   document.getElementById('result').value = 'The total price of the courses: $' + (coursePrice('Java') + coursePrice('Cpp') + coursePrice('Cs') + coursePrice('Js') + coursePrice('HtmlCss'))
 }
